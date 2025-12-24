@@ -267,14 +267,14 @@ const Contact = () => {
       <section className="relative h-[400px] lg:h-[500px]">
         <div className="absolute inset-0 grayscale">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946229!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1703156800000!5m2!1sen!2s"
+            src="https://www.google.com/maps?q=N%C2%B0%204%20rue%202%20Quartier%20Plaisance%20V%C3%A9lodrome%2C%20Rue%20Ibn%20Hamdisse%2C%20Casablanca&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="DWP Studio Location"
+            title="DWP Studio Casablanca Location"
           />
         </div>
         {/* Map Marker Overlay */}
