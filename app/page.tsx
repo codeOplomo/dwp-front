@@ -88,6 +88,7 @@ const Home = () => {
         </div>
       </ParallaxHero>
       */}
+      
       <ParallaxVideoHero videoSrc="/dwp-video.webm">
         <div className="container-wide px-6 lg:px-12 text-center">
           <motion.div
