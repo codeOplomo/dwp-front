@@ -30,5 +30,69 @@
     "status": "En cours",
     "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.\n\nPraesent sapien massa, convallis a pellentesque nec, egestas non nisi.\n\nMauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
     "year": "2025"
+  },
+  {
+    "slug": "project-3",
+    "title": "Villa Contemporaine",
+    "images": [
+      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "client": "Client C",
+    "surface": "950 m²",
+    "location": "Nice, France",
+    "status": "Livré",
+    "description": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.\n\nDonec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.\n\nMauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
+    "year": "2023"
+  },
+  {
+    "slug": "project-4",
+    "title": "Résidence Urbaine",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "client": "Client D",
+    "surface": "1500 m²",
+    "location": "Bordeaux, France",
+    "status": "En cours",
+    "description": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.\n\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.\n\nPraesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+    "year": "2025"
+  },
+  {
+    "slug": "project-5",
+    "title": "Complexe Commercial",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "client": "Client E",
+    "surface": "2000 m²",
+    "location": "Marseille, France",
+    "status": "Livré",
+    "description": "Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.\n\nMauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.\n\nPraesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+    "year": "2024"
+  },
+  {
+    "slug": "project-6",
+    "title": "Loft Industriel",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "client": "Client F",
+    "surface": "600 m²",
+    "location": "Toulouse, France",
+    "status": "En cours",
+    "description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.\n\nDonec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.\n\nPraesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+    "year": "2025"
   }
 ]
