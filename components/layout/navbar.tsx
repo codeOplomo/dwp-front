@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="hidden lg:block bg-primary text-primary-foreground">
+      {/* <div className="hidden lg:block bg-primary text-primary-foreground">
         <div className="container-wide flex justify-between items-center py-2 px-6 lg:px-12">
           <div className="flex items-center gap-6 text-sm">
             <a href="tel:+1234567890" className="flex items-center gap-2 link-hover">
@@ -50,13 +50,13 @@ const Navbar = () => {
             <span>Lun - Ven : 9h00 - 18h00</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navbar */}
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 lg:top-10 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`bg-transparent absolute top-0 lg:top-5 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
             ? 'bg-background/95 backdrop-blur-md shadow-sm lg:top-0'
             : 'bg-transparent'
@@ -84,8 +84,8 @@ const Navbar = () => {
                   pathname === link.path
                     ? 'text-accent'
                     : isScrolled
-                    ? 'text-foreground hover:text-accent'
-                    : 'text-foreground hover:text-accent'
+                    ? 'text-white/80 hover:text-accent'
+                    : 'text-white/80 hover:text-accent'
                 }`}
               >
                 {link.name}
@@ -93,7 +93,7 @@ const Navbar = () => {
             ))}
             <Link
               href="/contact"
-              className="btn-outline text-xs py-2.5 px-5"
+              className="btn-outline text-white text-xs py-2.5 px-5"
             >
               Contactez-nous
             </Link>

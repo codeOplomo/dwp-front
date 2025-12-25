@@ -1,53 +1,85 @@
 "use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ArrowRight, Home as HomeIcon, Building2, Ruler, Paintbrush } from 'lucide-react';
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  Home as HomeIcon,
+  Building2,
+  Ruler,
+  Paintbrush,
+} from "lucide-react";
 // import ParallaxHero from '@/components/animations/ParallaxHero';
 // import ParallaxHero from '@/components/animations/ParallaxHero';
-import ParallaxVideoHero from '@/components/animations/ParallaxVideoHero';
-import FadeIn from '@/components/animations/FadeIn';
-import AnimatedCounter from '@/components/animations/AnimatedCounter';
+import ParallaxVideoHero from "@/components/animations/ParallaxVideoHero";
+import FadeIn from "@/components/animations/FadeIn";
+import AnimatedCounter from "@/components/animations/AnimatedCounter";
 
 // const heroImage = '/hero-home.jpg';
-const portfolio1 = '/portfolio-1.jpg';
-const portfolio2 = '/portfolio-2.jpg';
-const portfolio3 = '/portfolio-3.jpg';
-const portfolio4 = '/portfolio-4.jpg';
-const testimonialBg = '/testimonial-bg.jpg';
+const portfolio1 = "/portfolio-1.jpg";
+const portfolio2 = "/portfolio-2.jpg";
+const portfolio3 = "/portfolio-3.jpg";
+const portfolio4 = "/portfolio-4.jpg";
+const testimonialBg = "/testimonial-bg.jpg";
 
 const portfolioItems = [
-  { image: portfolio1, title: 'Espace de vie moderne', category: 'Résidentiel' },
-  { image: portfolio2, title: 'Bureau d’entreprise', category: 'Commercial' },
-  { image: portfolio3, title: 'Salle de bain de luxe', category: 'Rénovation' },
-  { image: portfolio4, title: 'Maison contemporaine', category: 'Extérieur' },
+  {
+    image: portfolio1,
+    title: "Espace de vie moderne",
+    category: "Résidentiel",
+  },
+  { image: portfolio2, title: "Bureau d’entreprise", category: "Commercial" },
+  { image: portfolio3, title: "Salle de bain de luxe", category: "Rénovation" },
+  { image: portfolio4, title: "Maison contemporaine", category: "Extérieur" },
 ];
 
 const services = [
-  { icon: HomeIcon, title: 'Rénovation de cuisine', description: 'Transformez votre cuisine en un chef-d’œuvre culinaire' },
-  { icon: Building2, title: 'Conception commerciale', description: 'Des espaces qui inspirent la productivité et la croissance' },
-  { icon: Ruler, title: 'Rénovation complète', description: 'Transformation totale de votre espace de vie' },
-  { icon: Paintbrush, title: 'Design d’intérieur', description: 'Des esthétiques soignées qui reflètent votre style' },
+  {
+    icon: HomeIcon,
+    title: "Rénovation de cuisine",
+    description: "Transformez votre cuisine en un chef-d’œuvre culinaire",
+  },
+  {
+    icon: Building2,
+    title: "Conception commerciale",
+    description: "Des espaces qui inspirent la productivité et la croissance",
+  },
+  {
+    icon: Ruler,
+    title: "Rénovation complète",
+    description: "Transformation totale de votre espace de vie",
+  },
+  {
+    icon: Paintbrush,
+    title: "Design d’intérieur",
+    description: "Des esthétiques soignées qui reflètent votre style",
+  },
 ];
 
 const stats = [
-  { value: 215, suffix: '+', label: 'Clients satisfaits' },
-  { value: 550, suffix: '+', label: 'Projets réalisés' },
-  { value: 23, suffix: '+', label: 'Années d’expérience' },
-  { value: 25, suffix: '+', label: 'Bureaux dans le monde' },
+  { value: 215, suffix: "+", label: "Clients satisfaits" },
+  { value: 550, suffix: "+", label: "Projets réalisés" },
+  { value: 23, suffix: "+", label: "Années d’expérience" },
+  { value: 25, suffix: "+", label: "Bureaux dans le monde" },
 ];
 
 const testimonials = [
   {
-    quote: "DWP Studio a transformé notre vision en réalité. Leur souci du détail et leur approche innovante ont dépassé toutes nos attentes.",
+    quote:
+      "DWP Studio a transformé notre vision en réalité. Leur souci du détail et leur approche innovante ont dépassé toutes nos attentes.",
     author: "Sarah Mitchell",
-    role: "Propriétaire, Manhattan"
-  }
+    role: "Propriétaire, Manhattan",
+  },
 ];
 
 const partners = [
-  'Herman Miller', 'Knoll', 'Steelcase', 'Vitra', 'B&B Italia', 'Cassina'
+  "Herman Miller",
+  "Knoll",
+  "Steelcase",
+  "Vitra",
+  "B&B Italia",
+  "Cassina",
 ];
 
 const Home = () => {
@@ -105,8 +137,9 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="heading-display text-primary-foreground max-w-5xl mx-auto mb-8"
           >
-            L’innovation dans chaque ligne.{' '}
-            <span className="text-accent">Solidité</span> dans chaque réalisation.
+            L’innovation dans chaque ligne.{" "}
+            <span className="text-accent">Solidité</span> dans chaque
+            réalisation.
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -122,7 +155,7 @@ const Home = () => {
       </ParallaxVideoHero>
 
       {/* About Preview Section */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-gray-300">
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeIn direction="left">
@@ -137,15 +170,25 @@ const Home = () => {
             </FadeIn>
             <FadeIn direction="right" delay={0.2}>
               <div>
-                <p className="text-accent text-sm tracking-widest uppercase mb-4">À propos</p>
+                <div className="flex">
+                  <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">
+                    À propos
+                  </p>
+                </div>
                 <h2 className="heading-section mb-6">
                   Créer des espaces qui inspirent
                 </h2>
                 <p className="text-body mb-6">
-                  Avec plus de deux décennies d’expérience, DWP Studio est à la pointe de l’innovation architecturale. Nous croyons que chaque espace a le potentiel de transformer des vies, et notre mission est de libérer ce potentiel grâce à un design réfléchi et un savoir-faire méticuleux.
+                  Avec plus de deux décennies d’expérience, DWP Studio est à la
+                  pointe de l’innovation architecturale. Nous croyons que chaque
+                  espace a le potentiel de transformer des vies, et notre
+                  mission est de libérer ce potentiel grâce à un design réfléchi
+                  et un savoir-faire méticuleux.
                 </p>
                 <p className="text-body mb-8">
-                  Notre équipe d’architectes et de designers dévoués travaille en collaboration avec les clients pour créer des environnements à la fois beaux, fonctionnels et durables.
+                  Notre équipe d’architectes et de designers dévoués travaille
+                  en collaboration avec les clients pour créer des
+                  environnements à la fois beaux, fonctionnels et durables.
                 </p>
                 <Link href="/about" className="btn-primary">
                   En savoir plus
@@ -162,7 +205,9 @@ const Home = () => {
         <div className="container-wide">
           <FadeIn>
             <div className="text-center mb-16">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Nos réalisations</p>
+              <p className="text-accent text-sm tracking-widest uppercase mb-4">
+                Nos réalisations
+              </p>
               <h2 className="heading-section">Projets à la une</h2>
             </div>
           </FadeIn>
@@ -199,7 +244,9 @@ const Home = () => {
         <div className="container-wide">
           <FadeIn>
             <div className="text-center mb-16">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Notre expertise</p>
+              <p className="text-accent text-sm tracking-widest uppercase mb-4">
+                Notre expertise
+              </p>
               <h2 className="heading-section">Nos services</h2>
             </div>
           </FadeIn>
@@ -211,7 +258,9 @@ const Home = () => {
                   <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-accent text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
                     <service.icon size={28} strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-serif text-xl tracking-wide mb-3">{service.title}</h3>
+                  <h3 className="font-serif text-xl tracking-wide mb-3">
+                    {service.title}
+                  </h3>
                   <p className="text-body text-sm">{service.description}</p>
                 </div>
               </FadeIn>
@@ -247,24 +296,25 @@ const Home = () => {
       {/* Testimonials Section */}
       <section className="relative py-24 lg:py-32">
         <div className="absolute inset-0">
-          <Image
-            src={testimonialBg}
-            alt=""
-            fill
-            className="object-cover"
-          />
+          <Image src={testimonialBg} alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative container-wide px-6 lg:px-12">
           <FadeIn>
             <div className="max-w-4xl mx-auto text-center">
-              <p className="text-accent text-sm tracking-widest uppercase mb-8">Témoignages</p>
+              <p className="text-accent text-sm tracking-widest uppercase mb-8">
+                Témoignages
+              </p>
               <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl font-light text-primary-foreground leading-relaxed mb-8">
                 &ldquo;{testimonials[0].quote}&rdquo;
               </blockquote>
               <div>
-                <p className="text-primary-foreground font-medium">{testimonials[0].author}</p>
-                <p className="text-primary-foreground/60 text-sm">{testimonials[0].role}</p>
+                <p className="text-primary-foreground font-medium">
+                  {testimonials[0].author}
+                </p>
+                <p className="text-primary-foreground/60 text-sm">
+                  {testimonials[0].role}
+                </p>
               </div>
             </div>
           </FadeIn>
@@ -295,8 +345,12 @@ const Home = () => {
       <section className="section-padding bg-background">
         <div className="container-wide text-center">
           <FadeIn>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Prêt à commencer ?</p>
-            <h2 className="heading-section mb-8">Créons quelque chose de beau</h2>
+            <p className="text-accent text-sm tracking-widest uppercase mb-4">
+              Prêt à commencer ?
+            </p>
+            <h2 className="heading-section mb-8">
+              Créons quelque chose de beau
+            </h2>
             <Link href="/contact" className="btn-primary">
               Prendre contact
               <ArrowRight className="ml-2" size={18} />
