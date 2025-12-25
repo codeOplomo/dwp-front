@@ -8,8 +8,8 @@ import { usePathname } from 'next/navigation';
 const navLinks = [
   { name: 'Accueil', path: '/' },
   { name: 'Services', path: '/services' },
-  { name: 'À propos', path: '/about' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Portfolio', path: '' },
+  { name: 'Blog', path: '' },
 ];
 
 const Navbar = () => {

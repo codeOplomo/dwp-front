@@ -90,7 +90,9 @@ const Services = () => {
         <div className="container-wide">
           <FadeIn>
             <div className="text-center mb-16">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Nos prestations</p>
+              <div className="flex justify-center">
+                <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">Nos prestations</p>
+              </div>
               <h2 className="heading-section">Services de rénovation complets</h2>
             </div>
           </FadeIn>
@@ -164,7 +166,9 @@ const Services = () => {
         <div className="container-wide">
           <FadeIn>
             <div className="text-center mb-16">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Notre méthode</p>
+              <div className="flex justify-center">
+                <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">Notre méthode</p>
+              </div>
               <h2 className="heading-section">Notre processus</h2>
             </div>
           </FadeIn>
@@ -200,7 +204,9 @@ const Services = () => {
             </FadeIn>
             <FadeIn direction="right" delay={0.2}>
               <div>
-                <p className="text-accent text-sm tracking-widest uppercase mb-4">Message de notre équipe</p>
+                <div className="flex">
+                  <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">Message de notre équipe</p>
+                </div>
                 <blockquote className="font-serif text-2xl lg:text-3xl font-light leading-relaxed mb-8">
                   « Chaque projet de rénovation est une opportunité de créer quelque chose d’extraordinaire.
                   Nous abordons chaque espace avec un regard neuf et l’engagement de dépasser les attentes. »

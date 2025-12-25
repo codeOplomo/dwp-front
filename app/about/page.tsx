@@ -213,7 +213,7 @@ const About = () => {
               Collaborons pour donner vie à votre vision. Notre équipe est prête à vous aider à créer quelque chose d’extraordinaire.
             </p>
             <Link href="/contact" className="btn-accent">
-              Prendre contact
+              Créons ensemble
               <ArrowRight className="ml-2" size={18} />
             </Link>
           </FadeIn>

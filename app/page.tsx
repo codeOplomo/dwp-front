@@ -206,9 +206,11 @@ const Home = () => {
         <div className="container-wide">
           <FadeIn>
             <div className="text-center mb-16">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">
-                Nos réalisations
-              </p>
+              <div className="flex justify-center">
+                <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">
+                  Nos réalisations
+                </p>
+              </div>
               <h2 className="heading-section">Projets à la une</h2>
             </div>
           </FadeIn>
@@ -245,9 +247,11 @@ const Home = () => {
         <div className="container-wide">
           <FadeIn>
             <div className="text-center mb-16">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">
-                Notre expertise
-              </p>
+              <div className="flex justify-center">
+                <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">
+                  Notre expertise
+                </p>
+              </div>
               <h2 className="heading-section">Nos services</h2>
             </div>
           </FadeIn>
@@ -322,6 +326,36 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="container-wide px-6 lg:px-12">
+          <FadeIn>
+            <div className="text-center">
+              <div className="flex justify-center">
+                <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">
+                  Certifications
+                </p>
+              </div>
+              <h2 className="heading-section mb-8">Nos engagements qualité</h2>
+              <div className="flex justify-center items-center gap-12">
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 bg-accent rounded-full flex items-center justify-center">
+                    <span className="text-accent-foreground font-bold text-xl">ISO</span>
+                  </div>
+                  <p className="text-sm">Certification ISO</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 bg-accent rounded-full flex items-center justify-center">
+                    <span className="text-accent-foreground font-bold text-xl">HQE</span>
+                  </div>
+                  <p className="text-sm">Haute Qualité Environnementale</p>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+      
       {/* Partners Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container-wide px-6 lg:px-12">
@@ -342,18 +376,21 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* CTA Section */}
       <section className="section-padding bg-background">
         <div className="container-wide text-center">
           <FadeIn>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">
-              Prêt à commencer ?
-            </p>
+            <div className="flex justify-center">
+              <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">
+                Prêt à commencer ?
+              </p>
+            </div>
             <h2 className="heading-section mb-8">
               Créons quelque chose de beau
             </h2>
             <Link href="/contact" className="btn-primary">
-              Prendre contact
+              Créons ensemble
               <ArrowRight className="ml-2" size={18} />
             </Link>
           </FadeIn>
