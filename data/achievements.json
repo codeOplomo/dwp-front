@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "project-1",
+    "title": "Le Grand Projet",
+    "images": [
+      "/guy.webp",
+      "/guy-1.webp",
+      "/guy-2.webp",
+      "/guy-3.webp"
+    ],
+    "client": "Client A",
+    "surface": "1200 m²",
+    "location": "Paris, France",
+    "status": "Livré",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim erat dictum urna, nec dictum massa enim nec sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nSuspendisse potenti. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eu aliquam nisi nisl euismod enim.\n\nCurabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+    "year": "2024"
+  },
+  {
+    "slug": "project-2",
+    "title": "Projet Moderne",
+    "images": [
+      "/ycd.webp",
+      "/ycd-1.webp",
+      "/ycd-2.webp",
+      "/ycd-3.webp"
+    ],
+    "client": "Client B",
+    "surface": "800 m²",
+    "location": "Lyon, France",
+    "status": "En cours",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.\n\nPraesent sapien massa, convallis a pellentesque nec, egestas non nisi.\n\nMauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
+    "year": "2025"
+  }
+]

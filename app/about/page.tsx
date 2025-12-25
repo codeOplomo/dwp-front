@@ -168,7 +168,7 @@ const About = () => {
       <section className="section-padding-sm bg-secondary">
         <div className="container-wide">
           <FadeIn>
-            <div className="image-hover aspect-[21/9] overflow-hidden">
+            <div className="image-hover aspect-[21/9] overflow-hidden relative">
               <Image
                 src={team1}
                 alt="The complete DWP Studio team"

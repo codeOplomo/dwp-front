@@ -81,14 +81,14 @@ const Contact = () => {
         <div className="container-wide px-6 lg:px-12 py-4">
           <div className="flex flex-wrap items-center justify-center lg:justify-between gap-4">
             <div className="flex items-center gap-6">
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-sm link-hover">
+              {/* <a href="tel:+1234567890" className="flex items-center gap-2 text-sm link-hover">
                 <Phone size={14} />
                 <span>+1 (234) 567-890</span>
               </a>
               <a href="mailto:contact@dwp.ma" className="flex items-center gap-2 text-sm link-hover">
                 <Mail size={14} />
                 <span>contact@dwp.ma</span>
-              </a>
+              </a> */}
             </div>
             <div className="flex items-center gap-4">
               <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Instagram">

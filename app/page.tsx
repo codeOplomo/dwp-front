@@ -10,7 +10,7 @@ import ParallaxVideoHero from '@/components/animations/ParallaxVideoHero';
 import FadeIn from '@/components/animations/FadeIn';
 import AnimatedCounter from '@/components/animations/AnimatedCounter';
 
-const heroImage = '/hero-home.jpg';
+// const heroImage = '/hero-home.jpg';
 const portfolio1 = '/portfolio-1.jpg';
 const portfolio2 = '/portfolio-2.jpg';
 const portfolio3 = '/portfolio-3.jpg';
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </ParallaxHero>
       */}
-      <ParallaxVideoHero youtubeUrl="https://www.youtube.com/watch?v=WdWEMXnHBVI">
+      <ParallaxVideoHero videoSrc="/dwp-video.mp4">
         <div className="container-wide px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -126,7 +126,7 @@ const Home = () => {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeIn direction="left">
-              <div className="image-hover aspect-[4/5] overflow-hidden">
+              <div className="image-hover aspect-[4/5] overflow-hidden relative">
                 <Image
                   src={portfolio1}
                   alt="Modern interior design showcase"

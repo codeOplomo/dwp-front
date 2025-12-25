@@ -99,7 +99,7 @@ const Services = () => {
           <FadeIn>
             <div className="mb-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-secondary p-8 lg:p-12">
-                <div className="image-hover aspect-[4/3] overflow-hidden">
+                <div className="image-hover aspect-[4/3] overflow-hidden relative">
                   <Image
                     src={services[0].image}
                     alt={services[0].title}
@@ -188,7 +188,7 @@ const Services = () => {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeIn direction="left">
-              <div className="image-hover aspect-[3/4] overflow-hidden">
+              <div className="image-hover aspect-[3/4] overflow-hidden relative">
                 <Image
                   src={team2}
                   alt="Lead Designer"
