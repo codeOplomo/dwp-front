@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Inter:wght@300;400;500;600&display=swap");
 
 @import "tailwindcss";
 
@@ -32,8 +32,8 @@
   --color-sidebar-accent-foreground: hsl(240 5.9% 10%);
   --color-sidebar-border: hsl(220 13% 91%);
   --color-sidebar-ring: hsl(217.2 91.2% 59.8%);
-  --font-serif: 'Bodoni Moda', serif;
-  --font-sans: 'Inter', sans-serif;
+  --font-serif: "Bodoni Moda", serif;
+  --font-sans: "Inter", sans-serif;
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-lift: 0 10px 40px rgba(0, 0, 0, 0.12);
 }
@@ -78,7 +78,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-serif);
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -138,8 +143,8 @@
   }
 
   .heading-section {
-    font-family: var(--font-serif);
-    font-weight: 300;
+    font-family: "Montserrat";
+    font-weight: bold;
     font-size: 1.875rem;
     line-height: 1.1;
     letter-spacing: 0.05em;
@@ -284,7 +289,12 @@
   .overlay-gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    );
   }
 }
 
@@ -344,7 +354,9 @@
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
