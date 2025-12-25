@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </ParallaxHero>
       */}
-      <ParallaxVideoHero videoSrc="/dwp-video.mp4">
+      <ParallaxVideoHero videoSrc="/dwp-video.webm">
         <div className="container-wide px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
