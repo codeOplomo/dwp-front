@@ -167,7 +167,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <Link href="/services" className="btn-accent">
-              Découvrir nos portfolio
+              Découvrir notre portfolio
               <ArrowRight className="ml-2" size={18} />
             </Link>
           </motion.div>
