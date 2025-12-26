@@ -95,7 +95,7 @@ const Navbar = () => {
               href="/contact"
               className="btn-outline text-white text-xs py-2.5 px-5"
             >
-              Créons ensemble
+              Révéler votre intérieur
             </Link>
           </div>
 
