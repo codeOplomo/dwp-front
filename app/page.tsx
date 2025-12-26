@@ -156,7 +156,7 @@ const Home = () => {
       </ParallaxVideoHero>
 
       {/* About Preview Section */}
-      <section className="section-padding bg-gray-300">
+      <section className="section-padding">
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeIn direction="left">
@@ -355,7 +355,7 @@ const Home = () => {
           </FadeIn>
         </div>
       </section>
-      
+
       {/* Partners Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container-wide px-6 lg:px-12">

@@ -15,11 +15,11 @@ const AnimatedCounter = ({ end, suffix = '', label, duration = 2000 }: AnimatedC
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-serif text-5xl md:text-6xl lg:text-7xl font-light tracking-wider text-[#5e5654] mb-2">
+      <div className="font-serif text-5xl md:text-6xl lg:text-7xl font-light tracking-wider text-white mb-2">
         {count}
         <span className="text-accent">{suffix}</span>
       </div>
-      <p className="text-[#5e5654]/70 text-sm tracking-wider uppercase">
+      <p className="text-white/70 text-sm tracking-wider uppercase">
         {label}
       </p>
     </div>
