@@ -388,13 +388,9 @@ const Home = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
             {partners.map((partner, index) => (
               <FadeIn key={partner.name} delay={index * 0.05}>
-                <Image
-                  src={partner.image}
-                  alt={partner.name}
-                  width={150}
-                  height={59}
-                  className="opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default"
-                />
+                <span className="text-muted-foreground text-2xl font-medium opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default">
+                  {partner.name}
+                </span>
               </FadeIn>
             ))}
           </div>

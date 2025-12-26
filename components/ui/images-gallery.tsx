@@ -7,12 +7,12 @@ import { useState, useEffect, useRef } from "react"
 import { ArrowRight } from "lucide-react"
 
 const allImages = [
-  "/guy.webp",
-  "/guy-1.webp",
-  "/guy-2.webp",
-  "/guy-3.webp",
-  "/guy.webp",
-  "/guy-1.webp",
+  "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80", // Modern living room
+  "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // Minimalist kitchen
+  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80", // Cozy bedroom
+  "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // Elegant bathroom
+  "https://images.unsplash.com/photo-1503389152951-9c3d8bca6c63?auto=format&fit=crop&w=800&q=80", // Stylish workspace
+  "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // Open-plan interior
 ]
 
 // Create 4 vertical columns with images
