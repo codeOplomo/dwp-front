@@ -15,6 +15,7 @@ import {
 import ParallaxVideoHero from "@/components/animations/ParallaxVideoHero";
 import FadeIn from "@/components/animations/FadeIn";
 import AnimatedCounter from "@/components/animations/AnimatedCounter";
+import { ProductShowcase } from "@/components/ui/images-gallery";
 
 // const heroImage = '/hero-home.jpg';
 const portfolio1 = "/portfolio-1.jpg";
@@ -233,7 +234,9 @@ const Home = () => {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+           <ProductShowcase />
+
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {portfolioItems.map((item, index) => (
               <FadeIn key={item.title} delay={index * 0.1}>
                 <div className="group relative image-hover aspect-square cursor-pointer">
@@ -256,7 +259,7 @@ const Home = () => {
                 </div>
               </FadeIn>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
