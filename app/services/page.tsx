@@ -232,7 +232,7 @@ const Services = () => {
               Discutons de votre projet et donnons vie à vos idées. Planifiez une consultation gratuite dès aujourd’hui.
             </p>
             <Link href="/contact" className="btn-accent">
-              Créons ensemble
+              Révéler votre intérieur
               <ArrowRight className="ml-2" size={18} />
             </Link>
           </FadeIn>
