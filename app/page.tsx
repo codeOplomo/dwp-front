@@ -378,23 +378,29 @@ const Home = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container-wide px-6 lg:px-12">
           <FadeIn>
-            <p className="text-center text-muted-foreground text-sm tracking-widest uppercase mb-10">
-              Partenaires de confiance
-            </p>
+            <div className="text-center">
+              <div className="flex justify-center">
+                <p className="bg-accent p-2 rounded-sm text-sm tracking-widest uppercase mb-4">
+                  Certifications
+                </p>
+              </div>
+              <h2 className="heading-section mb-8">Nos engagements qualité</h2>
+              <div className="flex justify-center items-center gap-12">
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <Image src="/dwp-iso.png" alt="ISO Certification" width={90} height={90} />
+                  </div>
+                  <p className="text-sm">Certification ISO</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <Image src="/dwp-HQE.webp" alt="HQE Certification" width={90} height={90} />
+                  </div>
+                  <p className="text-sm">Haute Qualité Environnementale</p>
+                </div>
+              </div>
+            </div>
           </FadeIn>
-          <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
-            {partners.map((partner, index) => (
-              <FadeIn key={partner.name} delay={index * 0.05}>
-                <Image
-                  src={partner.image}
-                  alt={partner.name}
-                  width={150}
-                  height={59}
-                  className="opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default"
-                />
-              </FadeIn>
-            ))}
-          </div>
         </div>
       </section>
 
