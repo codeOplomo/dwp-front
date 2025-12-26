@@ -11,16 +11,22 @@ const allImages = [
   "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", // Minimalist kitchen
   "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80", // Cozy bedroom
   "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=800&q=80", // Elegant bathroom
-  "https://images.unsplash.com/photo-1503389152951-9c3d8bca6c63?auto=format&fit=crop&w=800&q=80", // Stylish workspace
-  "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80", // Open-plan interior
+  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80", // Stylish workspace
+  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80", // Open-plan interior
+  "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80", // Modern office
+  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80", // Contemporary home
+  "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80", // Luxury interior
+  "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80", // Scandinavian design
+  "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80", // Minimalist living
+  "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80", // Elegant dining
 ]
 
 // Create 4 vertical columns with images
 const columns = [
-  [allImages[0], allImages[3], allImages[1], allImages[4], allImages[2], allImages[5]],
-  [allImages[1], allImages[4], allImages[2], allImages[5], allImages[0], allImages[3]],
-  [allImages[2], allImages[5], allImages[0], allImages[3], allImages[1], allImages[4]],
-  [allImages[3], allImages[0], allImages[4], allImages[1], allImages[5], allImages[2]],
+  allImages.slice(0,8),
+  allImages.slice(2,10),
+  allImages.slice(4,12),
+  [...allImages.slice(6,12), ...allImages.slice(0,2)],
 ]
 
 export function ProductShowcase() {
@@ -52,7 +58,7 @@ export function ProductShowcase() {
   return (
       <div ref={sectionRef} className="container mx-auto px-6">
         {/* Card Container */}
-        <div className="max-w-6xl mx-auto relative overflow-hidden rounded-[40px] bg-[#1f3630] shadow-2xl min-h-[600px] md:min-h-[700px]">
+        <div className="max-w-6xl mx-auto relative overflow-hidden rounded-[40px] bg-[#1f3630] shadow-2xl min-h-[6500px] md:min-h-[800px]">
           {/* 4 Vertical Sliding Columns */}
           <div className="absolute inset-0 flex gap-4 p-4 overflow-hidden">
             {columns.map((column, columnIndex) => {
@@ -60,7 +66,7 @@ export function ProductShowcase() {
               const speeds = [1.5, -1.8, 1.2, -1.4]
               // Initial offsets to stagger columns and fill space
               const initialOffsets = [-100, 50, -150, 100]
-              const translateY = initialOffsets[columnIndex] + (scrollProgress * 800 * speeds[columnIndex])
+              const translateY = initialOffsets[columnIndex] + (scrollProgress * 400 * speeds[columnIndex])
 
               return (
                 <div
@@ -71,8 +77,8 @@ export function ProductShowcase() {
                     transition: "none", // Remove transition for instant response
                   }}
                 >
-                  {/* Repeat images 5 times for continuous scroll */}
-                  {[...column, ...column, ...column, ...column, ...column].map((image, imageIndex) => (
+                  {/* Repeat images 6 times for continuous scroll */}
+                  {[...column, ...column, ...column, ...column, ...column, ...column].map((image, imageIndex) => (
                     <div
                       key={imageIndex}
                       className="relative aspect-[3/4] rounded-3xl overflow-hidden flex-shrink-0"
