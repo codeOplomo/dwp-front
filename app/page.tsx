@@ -409,7 +409,7 @@ const Home = () => {
               Créons quelque chose de beau
             </h2>
             <Link href="/contact" className="btn-primary">
-              Concevoir votre projet
+              Révéler votre intérieur
               <ArrowRight className="ml-2" size={18} />
             </Link>
           </FadeIn>
